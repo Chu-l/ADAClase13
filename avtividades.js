@@ -30,7 +30,7 @@ mostrarMensaje(); // Prueba de la función. Se van a ver los dos msjes porque la
 /*** Ejercicio 4: Número par o impar
 Crea una función declarada llamada esPar que reciba un número y devuelva "Es par" si el número es par o "Es impar" si el número es impar. Usa una variable local para guardar el resultado.
 ***/
-
+/*
 function esPar(numero) {
     let resultado; // Variable local para guardar el resultado
     if (numero % 2 === 0) {
@@ -39,5 +39,14 @@ function esPar(numero) {
         resultado = "Es impar";
     }   
     return resultado;
-}
+};
 console.log(esPar(258)) // Prueba de la función
+*/
+/*** Ejercicio 5: Concatenar nombres (función expresada)
+Crea una función expresada llamada concatenarNombres que reciba dos nombres (nombre y apellido) como parámetros y devuelva el nombre completo concatenado.
+***/
+
+let concatenarNombres = function(nombre,apellido) {
+    return nombre + " " + apellido;
+};
+console.log(concatenarNombres("Susana","Giménez"));
