@@ -17,7 +17,7 @@ console.log(encontrarMayor(3, 8)); // Prueba de la función
 */
 /*** Ejercicio 3: Mensaje global y local
 Declara una variable global llamada saludoGlobal con el valor "Hola desde el scope global". Luego, crea una función llamada mostrarMensaje que declare una variable local llamada saludoLocal con el valor "Hola desde el scope local" y que imprima ambos mensajes.***/
-
+/*
 let saludoGlobal = "Hola desde el scope global";
 
 function mostrarMensaje() {
@@ -26,3 +26,18 @@ function mostrarMensaje() {
     console.log(saludoLocal);
 }
 mostrarMensaje(); // Prueba de la función. Se van a ver los dos msjes porque la func puede hacer uso de una variable global y una local.
+*/
+/*** Ejercicio 4: Número par o impar
+Crea una función declarada llamada esPar que reciba un número y devuelva "Es par" si el número es par o "Es impar" si el número es impar. Usa una variable local para guardar el resultado.
+***/
+
+function esPar(numero) {
+    let resultado; // Variable local para guardar el resultado
+    if (numero % 2 === 0) {
+        resultado = "Es par";
+    } else {
+        resultado = "Es impar";
+    }   
+    return resultado;
+}
+console.log(esPar(258)) // Prueba de la función
