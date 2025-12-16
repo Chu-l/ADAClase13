@@ -77,8 +77,18 @@ mostrarSaludo();
 */
 /*** Ejercicio 8: Convertir grados Celsius a Fahrenheit (Ejercicio entrevista)
 Crea una función expresada llamada convertirCelsiusAFahrenheit que reciba una temperatura en grados Celsius y devuelva la temperatura en Fahrenheit.***/
-
+/*
 let convertirCelsiusAFahrenheit = function(temperatura) {
     return (temperatura * 9/5) + 32;
 };
 console.log(convertirCelsiusAFahrenheit(30));
+*/
+/*** Ejercicio 9: Contar hasta un número
+Crea una función declarada llamada contarHasta que reciba un número y use un bucle para imprimir todos los números desde 1 hasta ese número.***/
+
+function contarHasta(numero) {
+    for (let i = 1; i <= numero; i++) {
+        console.log(i);
+    }
+};
+contarHasta(8);
