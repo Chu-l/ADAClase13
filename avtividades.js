@@ -85,10 +85,24 @@ console.log(convertirCelsiusAFahrenheit(30));
 */
 /*** Ejercicio 9: Contar hasta un número
 Crea una función declarada llamada contarHasta que reciba un número y use un bucle para imprimir todos los números desde 1 hasta ese número.***/
-
+/*
 function contarHasta(numero) {
     for (let i = 1; i <= numero; i++) {
         console.log(i);
     }
 };
 contarHasta(8);
+*/
+/*** Ejercicio 10: Factorial de un número (Ejercicio entrevista)
+Crea una función expresada llamada calcularFactorial que reciba un número y devuelva su factorial.***/
+//voy a probar con el 6: la cuenta debe ser 6! = 6 × 5 × 4 × 3 × 2 × 1 = 720.
+
+let calcularFactorial = function(numero) {
+    let resultado = 1;
+    for (let i = 1; i <= numero; i++) {
+        resultado = resultado * i;
+    }
+    return resultado;
+};
+
+console.log(calcularFactorial(6));
