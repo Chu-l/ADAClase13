@@ -61,9 +61,8 @@ function convertirHorasAMinutos(numero) {
 console.log(convertirHorasAMinutos(8));
 */
 /*** Ejercicio 7: Mensaje según la hora
-Declara una variable global llamada horaActual (puedes asignarle un valor fijo). Crea una función declarada llamada mostrarSaludo que imprima "Buenos días" si la hora es menor a 12, "Buenas tardes" si es menor a 18, o "Buenas noches" en cualquier otro caso.
-***/
-
+Declara una variable global llamada horaActual (puedes asignarle un valor fijo). Crea una función declarada llamada mostrarSaludo que imprima "Buenos días" si la hora es menor a 12, "Buenas tardes" si es menor a 18, o "Buenas noches" en cualquier otro caso.***/
+/*
 let horaActual = 19;
 function mostrarSaludo() {
     if (horaActual < 12) {
@@ -75,3 +74,11 @@ function mostrarSaludo() {
     }
 };
 mostrarSaludo();
+*/
+/*** Ejercicio 8: Convertir grados Celsius a Fahrenheit (Ejercicio entrevista)
+Crea una función expresada llamada convertirCelsiusAFahrenheit que reciba una temperatura en grados Celsius y devuelva la temperatura en Fahrenheit.***/
+
+let convertirCelsiusAFahrenheit = function(temperatura) {
+    return (temperatura * 9/5) + 32;
+};
+console.log(convertirCelsiusAFahrenheit(30));
